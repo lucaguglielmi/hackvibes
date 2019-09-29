@@ -1,0 +1,16 @@
+@import "../abstracts/_variables.scss";
+
+// TEXTAREA
+
+.form-style-textarea {
+
+  textarea {
+    width: 100%;
+    border: 1px solid $color-darkgray;
+    max-width: 400px;
+    min-height: 120px;
+    padding: 1rem;
+  }
+
+
+}

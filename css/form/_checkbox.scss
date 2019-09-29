@@ -1,0 +1,70 @@
+@import "../abstracts/_variables.scss";
+
+// CHECKBOX
+
+.form-style-checkbox {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0px -1rem;
+
+  li {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  label {
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin:0px;
+    border: 1px solid $color-darkgray;
+    margin: 1rem 0.5em;
+    border-radius: 100px;
+    cursor: pointer;
+    position:relative;
+
+    &:hover {
+      border-color: $color-black;
+    }
+    
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    background-image: url('img/icons/tick.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+  }
+
+    input {
+      position: absolute;
+      visibility: hidden;
+    }
+
+  }
+
+  label.is-selected {
+    border: 1px solid $color-primary;
+    color: $color-primary;
+
+  &:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    opacity: 1;
+  }
+  }
+
+}

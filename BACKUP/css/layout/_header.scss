@@ -1,0 +1,54 @@
+@import "../abstracts/_variables.scss";
+
+
+.header__inner {
+  // common style for both vibe app and normal website
+  width: 1200px;
+  max-width: 1200px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  padding: 0 2rem;
+  margin:auto;
+}
+
+header nav {
+  margin-left: auto;
+
+  ul {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    list-style: none;
+
+    li {
+      list-style: none;
+      margin: 0rem;
+
+      a {
+          border: 2px solid $color-white;
+          padding: 0.3rem 1.5rem;
+          border-radius: 2rem;
+          text-decoration: none;
+          color: $color-black;
+
+          &:hover {
+            color: $color-primary;
+            // border-color: $color-primary;
+          }
+
+          &.is-selected {
+            color: $color-primary;
+            border-color: $color-primary;
+            cursor: default;
+    
+      }
+
+  }
+
+    }
+  }
+
+}

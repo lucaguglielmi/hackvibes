@@ -1,0 +1,41 @@
+@import "../abstracts/_variables.scss";
+
+// CONTENT ROW
+
+.content__row {
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  list-style: none;
+
+  h3 {
+    margin: 0px;
+    padding: 0px;
+
+    strong {
+      color: $color-primary;
+      a  { 
+        display: block;
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-left: 20px;
+        background-color: yellow;
+      }
+    }
+  }
+
+  em {
+    font-size: 0.8em;
+    color: $color-darkgray;
+  }
+
+  input, textarea {
+    &:hover {
+      border-color: $color-primary;
+    }
+
+    label {
+      border-color: $color-primary;
+    }
+  }
+}

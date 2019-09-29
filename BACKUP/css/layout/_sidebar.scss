@@ -1,0 +1,24 @@
+@import "../abstracts/_variables.scss";
+
+
+.sidebar {
+  width: 100%;
+  padding: 2rem;
+}
+
+.sidebar__title {
+  color: $color-lightgray;
+}
+
+.sidebar__p {
+  color: $color-lightgray;
+  letter-spacing: 0.05em;
+  line-height: 1.7em;}
+
+.sidebar__vibe-number {
+  width: 100%;
+  color: $color-lightgray;
+  text-decoration: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
