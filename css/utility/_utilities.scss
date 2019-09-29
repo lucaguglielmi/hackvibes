@@ -1,0 +1,39 @@
+@import "../abstracts/_variables.scss";
+
+/* ==========================================================================
+   Utility classes
+   ========================================================================== */
+
+   /* If the element is display block */ 
+   .hide-on-mobile {
+    display: block;
+    @media (max-width: 1000px) {
+      display: none;
+    }
+   }
+
+
+   .hide-on-desktop {
+    display: none;
+    @media (max-width: 1000px) {
+      display: block;
+    }
+  }
+
+
+  /* If the element is display flex */ 
+
+  .hide-on-mobile--flex {
+    display: flex;
+    @media (max-width: 1000px) {
+      display: none;
+    }
+    
+  }
+  .hide-on-desktop--flex {
+    display: none;
+    @media (max-width: 1000px) {
+      display: flex;
+    }
+    
+  }

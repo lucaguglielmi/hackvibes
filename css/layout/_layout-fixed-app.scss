@@ -1,0 +1,63 @@
+@import "../abstracts/_variables.scss";
+
+.vibes-app header {
+  position: fixed;
+  left: 0px; 
+  right: 0px;
+  top: 0px;
+  height: 68px;
+
+  .header__inner {
+  height: 68px;
+  }
+}
+
+.vibes-app footer {
+  position: fixed;
+  height: 68px;
+  left: 0px; 
+  right: 0px;
+  bottom: 0px;
+}
+
+
+.vibes-app main {
+  position: fixed;
+  top: 68px;
+  left: 0px;
+  right:0px;
+  bottom:68px;
+}
+
+.vibes-app .main__inner {
+  display: flex;
+  width:100%;
+  height: 100%;
+
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+    .main__sidebar {
+    display: none;
+    }
+    .main__content {
+    width:100%;
+    }
+  }
+}
+
+  .main__sidebar {
+    width: 500px;
+    background-color: $color-black;
+    height: 100%;
+  }
+
+  .main__content {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height: 100%;
+    background-color: $color-lightgray;
+
+    overflow-y: auto;
+  }
+

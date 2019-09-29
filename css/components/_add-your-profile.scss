@@ -1,0 +1,39 @@
+@import "../abstracts/_variables.scss";
+
+
+/* 
+ADD YOUR PROFILE
+*/
+
+.add-your-profile {
+display: flex;
+flex-wrap: nowrap;
+position:Relative;
+background-color: $color-lightgray;
+align-items: center;
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+}
+
+.add-your-profile__illustration {
+  background-color: $color-primary;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position:relative;
+  margin-right: 200px;
+
+  img {
+    position: absolute;
+    right: -120px;
+    top: 50%;
+    margin-top: -120px;
+  }
+
+}
+.add-your-profile__content {
+  padding: 3rem;
+}

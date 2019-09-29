@@ -1,0 +1,19 @@
+@import "../abstracts/_variables.scss";
+
+/* 
+TEXT BLOCK
+*/
+
+.generic-text-block {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem 0;
+
+    p {
+       line-height: 1.5em;
+    }
+
+    h2, h3 {
+        margin-top: 1rem;
+    }
+}
