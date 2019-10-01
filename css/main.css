@@ -1348,6 +1348,13 @@ BROWSE VIBES CAROUSEL
   position: relative;
 }
 
+@media (max-width: 900px) {
+  .vibes-carousel {
+    border-left: 0px;
+    padding: 0px;
+  }
+}
+
 .metti-qui-il-carousel {
   background-color: #f4f4f4;
   width: 100%;
@@ -1355,28 +1362,34 @@ BROWSE VIBES CAROUSEL
   position: relative;
 }
 
+@media (max-width: 900px) {
+  .metti-qui-il-carousel {
+    padding: 2rem 0px;
+  }
+  .metti-qui-il-carousel p {
+    padding: 0 2rem;
+  }
+}
+
 /* Style from flickity example */
 .carousel {
-  background: #EEE;
+  background-color: transparent;
 }
 
 .carousel-cell {
-  width: 50%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
+  width: 33%;
+  min-width: 350px;
+  height: auto;
+  margin-right: 2rem;
+  padding: 5rem 0;
 }
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+.carousel-cell .vibes-card {
+  border-radius: 15px;
+}
+
+.carousel-cell:nth-child(2), .carousel-cell:nth-child(5), .carousel-cell:nth-child(8), .carousel-cell:nth-child(11), .carousel-cell:nth-child(14), .carousel-cell:nth-child(17) {
+  margin-top: 3rem;
 }
 
 /* 
@@ -1607,6 +1620,169 @@ Three icons
 
 .three-icons ul li img {
   max-width: 200px;
+}
+
+/* 
+VIBE LAYOUT
+*/
+.vibe-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: Center;
+      -ms-flex-pack: Center;
+          justify-content: Center;
+}
+
+.vibe-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.vibe-grid ul li {
+  width: 29%;
+  list-style: none;
+  margin: 2%;
+  padding: 0;
+}
+
+.vibe-grid ul li:nth-child(2), .vibe-grid ul li:nth-child(5), .vibe-grid ul li:nth-child(8), .vibe-grid ul li:nth-child(11), .vibe-grid ul li:nth-child(14), .vibe-grid ul li:nth-child(17) {
+  margin-top: 2rem;
+}
+
+/* 
+VIBE LAYOUT
+*/
+.vibe-card {
+  width: 100%;
+  background-color: black;
+  padding: 9rem 2rem;
+  border-radius: 3px;
+  position: relative;
+}
+
+.vibe-card:hover {
+  cursor: pointer;
+}
+
+.vibe-card a {
+  text-decoration: none;
+}
+
+.vibe-card a .vibe-card__sub {
+  text-decoration: none;
+  width: 100%;
+  color: #ccc;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+}
+
+.vibe-card a .vibe-card__title {
+  text-decoration: none;
+  width: 100%;
+  color: white;
+}
+
+.vibe-card a .vibe-card__number {
+  text-decoration: none;
+  width: 100%;
+  color: #ccc;
+  position: relative;
+  font-size: 0.8em;
+  margin-left: 40px;
+}
+
+.vibe-card a .vibe-card__number:after {
+  content: '';
+  width: 40px;
+  height: 3px;
+  background-color: #ccc;
+  display: block;
+  position: absolute;
+  left: -50px;
+  top: 6px;
+}
+
+.style-1 {
+  background-color: #5c03ba;
+}
+
+.style-1 a .vibe-card__sub, .style-1 a .vibe-card__number, .style-1 a .vibe-card__number:after, .style-1 a .vibe-card__title {
+  color: #bbd3b8;
+}
+
+.style-2 {
+  background-color: #d9cecc;
+}
+
+.style-2 a .vibe-card__sub, .style-2 a .vibe-card__number, .style-2 a .vibe-card__number:after, .style-2 a .vibe-card__title {
+  color: #d70358;
+}
+
+.style-3 {
+  background-color: #d8c6c9;
+}
+
+.style-3 a .vibe-card__sub, .style-3 a .vibe-card__number, .style-3 a .vibe-card__number:after, .style-3 a .vibe-card__title {
+  color: #962b48;
+}
+
+.style-4 {
+  background-color: #951679;
+}
+
+.style-4 a .vibe-card__sub, .style-4 a .vibe-card__number, .style-4 a .vibe-card__number:after, .style-4 a .vibe-card__title {
+  color: #dacdd9;
+}
+
+.style-5 {
+  background-color: #bad2bd;
+}
+
+.style-5 a .vibe-card__sub, .style-5 a .vibe-card__number, .style-5 a .vibe-card__number:after, .style-5 a .vibe-card__title {
+  color: #336214;
+}
+
+.style-6 {
+  background-color: #37eef8;
+}
+
+.style-6 a .vibe-card__sub, .style-6 a .vibe-card__number, .style-6 a .vibe-card__number:after, .style-6 a .vibe-card__title {
+  color: #582beb;
+}
+
+.style-7 {
+  background-color: whitw;
+}
+
+.style-7 a .vibe-card__sub, .style-7 a .vibe-card__number, .style-7 a .vibe-card__number:after, .style-7 a .vibe-card__title {
+  color: whitw;
+}
+
+.style-8 {
+  background-color: #950c85;
+}
+
+.style-8 a .vibe-card__sub, .style-8 a .vibe-card__number, .style-8 a .vibe-card__number:after, .style-8 a .vibe-card__title {
+  color: #fbbf1c;
+}
+
+.style-9 {
+  background-color: whitw;
+}
+
+.style-9 a .vibe-card__sub, .style-9 a .vibe-card__number, .style-9 a .vibe-card__number:after, .style-9 a .vibe-card__title {
+  color: whitw;
 }
 
 /* 

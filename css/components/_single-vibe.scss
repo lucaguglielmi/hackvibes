@@ -1,0 +1,192 @@
+@import "../abstracts/_variables.scss";
+
+/* 
+VIBE LAYOUT
+*/
+
+.vibe-grid {
+display: flex;
+max-width:1200px;
+align-items: center;
+justify-content:Center;
+
+ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: 29%;
+        list-style: none;
+        margin: 2%;
+        padding:0;
+
+        &:nth-child(2), &:nth-child(5), &:nth-child(8), &:nth-child(11), &:nth-child(14), &:nth-child(17) {
+            margin-top: 2rem;
+        }
+    }
+}
+}
+
+
+
+/* 
+VIBE LAYOUT
+*/
+
+.vibe-card {
+    width:100%;
+    background-color: black;
+    padding: 9rem 2rem;
+    border-radius: 3px;
+    position:relative;
+
+    &:hover {
+           cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+            .vibe-card__sub {
+                text-decoration: none;
+                width:100%;
+                color: #ccc;
+                font-size: 0.8em;
+                letter-spacing: 0.08em;
+            }
+
+            .vibe-card__title {
+                text-decoration: none;
+                width:100%;
+                color: white;
+            }
+            .vibe-card__number {
+                text-decoration: none;
+                width:100%;
+                color: #ccc;
+                position:relative;
+                font-size: 0.8em;
+                margin-left: 40px;
+
+                &:after {
+                    content:'';
+                    width: 40px;
+                    height: 3px;
+                    background-color: #ccc;
+                    display: block;
+                    position: absolute;
+                    left: -50px;
+                    top: 6px;
+                }
+            }
+    }
+
+}
+
+
+.style-1 {
+    background-color: rgb(92,3,186);
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: rgb(187,211,184);
+        }
+    }
+
+}
+
+
+.style-2 {
+    background-color: rgb(217,206,204);
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: rgb(215,3,88);
+        }
+    }
+
+}
+
+
+.style-3 {
+    background-color:rgb(216,198,201);
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: rgb(150,43,72);
+        }
+    }
+
+}
+
+.style-4 {
+    background-color:rgb(149,22,121);
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: rgb(218,205,217);
+        }
+    }
+
+}
+
+
+.style-5 {
+    background-color:rgb(186,210,189);
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: rgb(51,98,20);
+        }
+    }
+
+}
+
+
+.style-6 {
+    background-color:rgb(55,238,248);
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: rgb(88,43,235);
+        }
+    }
+
+}
+
+.style-7 {
+    background-color:whitw;
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: whitw;
+        }
+    }
+
+}
+
+
+.style-8 {
+    background-color:rgb(149,12,133);
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: rgb(251,191,28);
+        }
+    }
+
+}
+
+
+.style-9 {
+    background-color:whitw;
+
+    a {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+            color: whitw;
+        }
+    }
+
+}
