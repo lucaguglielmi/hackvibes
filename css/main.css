@@ -1044,6 +1044,15 @@ header nav ul li a.is-selected {
   padding: 1.6rem 4rem;
 }
 
+.footer__website {
+  text-align: center;
+}
+
+.footer__website p {
+  text-align: center;
+  margin: auto;
+}
+
 .sidebar {
   width: 100%;
   padding: 2rem;
@@ -1407,11 +1416,11 @@ HERO BANNER
 }
 
 .hero-banner.hero-banner--dark {
-  background-color: #f5d5fd;
+  background-color: #EBE1EC;
 }
 
 .hero-banner.hero-banner--vibes {
-  background-color: #fccdf4;
+  background-color: #E1E6EC;
 }
 
 .hero-banner__content {
@@ -1470,6 +1479,14 @@ HERO BANNER
   .hero-banner__illustration {
     display: none;
   }
+}
+
+.bg-stilish {
+  font-size: 16vw;
+  color: #3F00FF;
+  position: absolute;
+  top: -150px;
+  right: 20px;
 }
 
 /* 
@@ -1586,14 +1603,17 @@ Three icons
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 4rem 2rem;
   margin: 2rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: Center;
-      -ms-flex-pack: Center;
-          justify-content: Center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f9f9f9;
 }
 
 .three-icons ul {
@@ -1620,6 +1640,11 @@ Three icons
 
 .three-icons ul li img {
   max-width: 200px;
+}
+
+.three-icons h2 {
+  max-width: 600px;
+  margin: auto;
 }
 
 /* 
@@ -1657,7 +1682,7 @@ VIBE LAYOUT
 }
 
 .vibe-grid ul li:nth-child(2), .vibe-grid ul li:nth-child(5), .vibe-grid ul li:nth-child(8), .vibe-grid ul li:nth-child(11), .vibe-grid ul li:nth-child(14), .vibe-grid ul li:nth-child(17) {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 /* 
@@ -1666,9 +1691,10 @@ VIBE LAYOUT
 .vibe-card {
   width: 100%;
   background-color: black;
-  padding: 9rem 2rem;
-  border-radius: 3px;
+  padding: 4rem 2rem;
+  border-radius: 10px;
   position: relative;
+  height: 300px;
 }
 
 .vibe-card:hover {
@@ -1714,75 +1740,59 @@ VIBE LAYOUT
 }
 
 .style-1 {
-  background-color: #5c03ba;
+  background-color: #f8381b;
 }
 
 .style-1 a .vibe-card__sub, .style-1 a .vibe-card__number, .style-1 a .vibe-card__number:after, .style-1 a .vibe-card__title {
-  color: #bbd3b8;
+  color: #e7d4d4;
 }
 
 .style-2 {
-  background-color: #d9cecc;
+  background-color: #6316fd;
 }
 
 .style-2 a .vibe-card__sub, .style-2 a .vibe-card__number, .style-2 a .vibe-card__number:after, .style-2 a .vibe-card__title {
-  color: #d70358;
+  color: #e0d5de;
 }
 
 .style-3 {
-  background-color: #d8c6c9;
+  background-color: #950b08;
 }
 
 .style-3 a .vibe-card__sub, .style-3 a .vibe-card__number, .style-3 a .vibe-card__number:after, .style-3 a .vibe-card__title {
-  color: #962b48;
+  color: #e4be25;
 }
 
 .style-4 {
-  background-color: #951679;
-}
-
-.style-4 a .vibe-card__sub, .style-4 a .vibe-card__number, .style-4 a .vibe-card__number:after, .style-4 a .vibe-card__title {
-  color: #dacdd9;
-}
-
-.style-5 {
-  background-color: #bad2bd;
-}
-
-.style-5 a .vibe-card__sub, .style-5 a .vibe-card__number, .style-5 a .vibe-card__number:after, .style-5 a .vibe-card__title {
-  color: #336214;
-}
-
-.style-6 {
-  background-color: #37eef8;
-}
-
-.style-6 a .vibe-card__sub, .style-6 a .vibe-card__number, .style-6 a .vibe-card__number:after, .style-6 a .vibe-card__title {
-  color: #582beb;
-}
-
-.style-7 {
-  background-color: whitw;
-}
-
-.style-7 a .vibe-card__sub, .style-7 a .vibe-card__number, .style-7 a .vibe-card__number:after, .style-7 a .vibe-card__title {
-  color: whitw;
-}
-
-.style-8 {
   background-color: #950c85;
 }
 
-.style-8 a .vibe-card__sub, .style-8 a .vibe-card__number, .style-8 a .vibe-card__number:after, .style-8 a .vibe-card__title {
+.style-4 a .vibe-card__sub, .style-4 a .vibe-card__number, .style-4 a .vibe-card__number:after, .style-4 a .vibe-card__title {
   color: #fbbf1c;
 }
 
-.style-9 {
-  background-color: whitw;
+.style-5 {
+  background-color: #e4be25;
 }
 
-.style-9 a .vibe-card__sub, .style-9 a .vibe-card__number, .style-9 a .vibe-card__number:after, .style-9 a .vibe-card__title {
-  color: whitw;
+.style-5 a .vibe-card__sub, .style-5 a .vibe-card__number, .style-5 a .vibe-card__number:after, .style-5 a .vibe-card__title {
+  color: #ab3503;
+}
+
+.style-6 {
+  background-color: #37e0dd;
+}
+
+.style-6 a .vibe-card__sub, .style-6 a .vibe-card__number, .style-6 a .vibe-card__number:after, .style-6 a .vibe-card__title {
+  color: #8e2b86;
+}
+
+.style-7 {
+  background-color: #e50461;
+}
+
+.style-7 a .vibe-card__sub, .style-7 a .vibe-card__number, .style-7 a .vibe-card__number:after, .style-7 a .vibe-card__titl {
+  color: #d7c4ca;
 }
 
 /* 

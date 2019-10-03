@@ -7,10 +7,13 @@ Three icons
 .three-icons {
     width: 100%;
     display: flex;
-    padding: 2rem;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
     margin: 2rem 0;   
     align-items: center;
-    justify-content:Center;
+    justify-content:center;
+    background-color: #f9f9f9;
+    
 
     ul {
         width: 100%;
@@ -31,6 +34,11 @@ Three icons
 
         }
 
+    }
+
+    h2 {
+        max-width: 600px;
+        margin:auto;
     }
 
 }
