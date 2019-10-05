@@ -27,6 +27,14 @@ ul {
         &:nth-child(2), &:nth-child(5), &:nth-child(8), &:nth-child(11), &:nth-child(14), &:nth-child(17) {
             margin-top: 3rem;
         }
+
+        @media (max-width: 960px) {
+            width: 46%;
+            margin: 2% 2%;
+                &:nth-child(2), &:nth-child(5), &:nth-child(8), &:nth-child(11), &:nth-child(14), &:nth-child(17) {
+                    margin: 2% 2%;
+                }
+        }
     }
 }
 }
@@ -44,13 +52,21 @@ VIBE LAYOUT
     border-radius: 10px;
     position:relative;
     height: 300px;
+    display: block;
+    transition: all 0.1s ease;
 
     &:hover {
-           cursor: pointer;
+        cursor: pointer;
+        scale: 1.05;
+        transition: all 0.3s ease;
     }
 
     a {
+        width:100%;
+        height: 100%;
         text-decoration: none;
+        display: block;
+
             .vibe-card__sub {
                 text-decoration: none;
                 width:100%;
@@ -87,6 +103,60 @@ VIBE LAYOUT
 
 }
 
+/* VIBE EXPANDED */
+.beta-message {
+    display: none;
+}
+.vibe--expanded {
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 10%;
+    right: 20%;
+    bottom: 10%;
+    left: 20%;
+    border-radius: 0;
+    z-index: 9999999;
+    background-color: black;
+    cursor: default;
+
+    transition: all 0.6s ease;
+
+    a {
+        display: none;
+    }
+
+    .beta-message {
+        display: block;
+    }
+}
+  
+/* WHITEKNIGHT */
+
+.whiteknight {
+    display: none;
+
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 0;
+    z-index: 999999;
+    opacity: 0.9;
+    background-color: white;
+}
+
+.noscroll {
+    overflow-y: hidden;
+}
+  
+
+/* ALL STYLES */ 
+
+
 
 .style-1 {
     background-color:#f8381b;
@@ -94,6 +164,10 @@ VIBE LAYOUT
     a {
         .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
             color: #e7d4d4;
+        }
+
+        .vibe-card__number:after {
+            background-color: #e7d4d4;
         }
     }
 
@@ -107,6 +181,10 @@ VIBE LAYOUT
         .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
             color: #e0d5de;
         }
+
+        .vibe-card__number:after {
+            background-color: #e0d5de;
+        }
     }
 
 }
@@ -116,8 +194,12 @@ VIBE LAYOUT
     background-color: #950b08;
 
     a {
-        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
+        .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title  {
             color: #e4be25;
+        }
+
+        .vibe-card__number:after {
+            background-color: #e4be25;
         }
     }
 
@@ -129,6 +211,10 @@ VIBE LAYOUT
     a {
         .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
             color: rgb(251,191,28);
+        }
+
+        .vibe-card__number:after {
+            background-color: rgb(251,191,28);
         }
     }
 
@@ -142,6 +228,10 @@ VIBE LAYOUT
         .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
             color:#ab3503;
         }
+
+        .vibe-card__number:after {
+            background-color: #ab3503;
+        }
     }
 
 }
@@ -154,6 +244,10 @@ VIBE LAYOUT
         .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__title   {
             color: #8e2b86;
         }
+
+        .vibe-card__number:after {
+            background-color: #8e2b86;
+        }
     }
 
 }
@@ -165,6 +259,10 @@ VIBE LAYOUT
     a {
         .vibe-card__sub, .vibe-card__number, .vibe-card__number:after,  .vibe-card__titl {
             color: #d7c4ca;
+        }
+
+        .vibe-card__number:after {
+            background-color: #d7c4ca;
         }
     }
 

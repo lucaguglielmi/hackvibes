@@ -1397,7 +1397,7 @@ BROWSE VIBES CAROUSEL
   border-radius: 15px;
 }
 
-.carousel-cell:nth-child(2), .carousel-cell:nth-child(5), .carousel-cell:nth-child(8), .carousel-cell:nth-child(11), .carousel-cell:nth-child(14), .carousel-cell:nth-child(17) {
+.carousel-cell:nth-child(even) {
   margin-top: 3rem;
 }
 
@@ -1685,6 +1685,16 @@ VIBE LAYOUT
   margin-top: 3rem;
 }
 
+@media (max-width: 960px) {
+  .vibe-grid ul li {
+    width: 46%;
+    margin: 2% 2%;
+  }
+  .vibe-grid ul li:nth-child(2), .vibe-grid ul li:nth-child(5), .vibe-grid ul li:nth-child(8), .vibe-grid ul li:nth-child(11), .vibe-grid ul li:nth-child(14), .vibe-grid ul li:nth-child(17) {
+    margin: 2% 2%;
+  }
+}
+
 /* 
 VIBE LAYOUT
 */
@@ -1695,14 +1705,23 @@ VIBE LAYOUT
   border-radius: 10px;
   position: relative;
   height: 300px;
+  display: block;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .vibe-card:hover {
   cursor: pointer;
+  scale: 1.05;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .vibe-card a {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
+  display: block;
 }
 
 .vibe-card a .vibe-card__sub {
@@ -1739,12 +1758,66 @@ VIBE LAYOUT
   top: 6px;
 }
 
+/* VIBE EXPANDED */
+.beta-message {
+  display: none;
+}
+
+.vibe--expanded {
+  position: fixed;
+  width: auto;
+  height: auto;
+  top: 10%;
+  right: 20%;
+  bottom: 10%;
+  left: 20%;
+  border-radius: 0;
+  z-index: 9999999;
+  background-color: black;
+  cursor: default;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.vibe--expanded a {
+  display: none;
+}
+
+.vibe--expanded .beta-message {
+  display: block;
+}
+
+/* WHITEKNIGHT */
+.whiteknight {
+  display: none;
+  position: fixed;
+  width: auto;
+  height: auto;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 0;
+  z-index: 999999;
+  opacity: 0.9;
+  background-color: white;
+}
+
+.noscroll {
+  overflow-y: hidden;
+}
+
+/* ALL STYLES */
 .style-1 {
   background-color: #f8381b;
 }
 
 .style-1 a .vibe-card__sub, .style-1 a .vibe-card__number, .style-1 a .vibe-card__number:after, .style-1 a .vibe-card__title {
   color: #e7d4d4;
+}
+
+.style-1 a .vibe-card__number:after {
+  background-color: #e7d4d4;
 }
 
 .style-2 {
@@ -1755,12 +1828,20 @@ VIBE LAYOUT
   color: #e0d5de;
 }
 
+.style-2 a .vibe-card__number:after {
+  background-color: #e0d5de;
+}
+
 .style-3 {
   background-color: #950b08;
 }
 
 .style-3 a .vibe-card__sub, .style-3 a .vibe-card__number, .style-3 a .vibe-card__number:after, .style-3 a .vibe-card__title {
   color: #e4be25;
+}
+
+.style-3 a .vibe-card__number:after {
+  background-color: #e4be25;
 }
 
 .style-4 {
@@ -1771,12 +1852,20 @@ VIBE LAYOUT
   color: #fbbf1c;
 }
 
+.style-4 a .vibe-card__number:after {
+  background-color: #fbbf1c;
+}
+
 .style-5 {
   background-color: #e4be25;
 }
 
 .style-5 a .vibe-card__sub, .style-5 a .vibe-card__number, .style-5 a .vibe-card__number:after, .style-5 a .vibe-card__title {
   color: #ab3503;
+}
+
+.style-5 a .vibe-card__number:after {
+  background-color: #ab3503;
 }
 
 .style-6 {
@@ -1787,12 +1876,20 @@ VIBE LAYOUT
   color: #8e2b86;
 }
 
+.style-6 a .vibe-card__number:after {
+  background-color: #8e2b86;
+}
+
 .style-7 {
   background-color: #e50461;
 }
 
 .style-7 a .vibe-card__sub, .style-7 a .vibe-card__number, .style-7 a .vibe-card__number:after, .style-7 a .vibe-card__titl {
   color: #d7c4ca;
+}
+
+.style-7 a .vibe-card__number:after {
+  background-color: #d7c4ca;
 }
 
 /* 
