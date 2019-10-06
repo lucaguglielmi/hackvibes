@@ -1401,9 +1401,7 @@ BROWSE VIBES CAROUSEL
   margin-top: 3rem;
 }
 
-/* 
-HERO BANNER
-*/
+/* HERO BANNER */
 .hero-banner {
   max-width: 1200px;
   margin: 0 auto 2rem auto;
@@ -1489,9 +1487,67 @@ HERO BANNER
   right: 20px;
 }
 
-/* 
-NEWSLETTER
-*/
+.newsletter {
+  background-color: #E1E6EC;
+  padding: 2rem 1rem 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+/*  NEWSLETTER */
+#mc-embedded-subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mc_embed_signup_scroll {
+  max-width: 600px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0rem;
+  margin: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mc-field-group {
+  border-radius: 40px;
+}
+
+#mce-EMAIL {
+  padding: 14px;
+  border-radius: 40px;
+  margin-right: -60px;
+  padding-right: 100px;
+  padding-left: 2rem;
+  z-index: 9;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.mce-send input {
+  z-index: 12;
+  width: 100%;
+}
+
 /* 
 SELLING POINTS
 */
@@ -1525,7 +1581,13 @@ SELLING POINTS
 
 .selling-points__content {
   background-color: #f4f4f4;
-  padding: 2rem;
+  padding: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .selling-points__content {
+    padding: 2rem;
+  }
 }
 
 .selling-points__ul {
@@ -2149,14 +2211,6 @@ SKETCH SQUARE EFFECT
   background-color: #3F00FF;
   color: #f4f4f4;
   cursor: pointer;
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.6em;
-    letter-spacing: 0.05em;
-    padding: 0.5rem 1rem;
-  }
 }
 
 /* Basic button styles */

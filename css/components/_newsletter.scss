@@ -1,5 +1,57 @@
 @import "../abstracts/_variables.scss";
 
-/* 
-NEWSLETTER
-*/
+
+.newsletter {
+    background-color: #E1E6EC;
+    padding: 2rem 1rem 3rem 1rem;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 4rem;
+    position:relative;
+
+}
+
+
+/*  NEWSLETTER */
+
+#mc-embedded-subscribe-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#mc_embed_signup_scroll {
+ max-width: 600px;
+ margin: auto;
+ display: flex;
+ flex-wrap: nowrap;
+ padding: 0rem;
+ margin: 0px;
+ align-items: center;
+ justify-content: center;
+}
+
+.mc-field-group {
+    border-radius: 40px;
+}
+
+#mce-EMAIL {
+    padding: 14px;
+    border-radius: 40px;
+    margin-right: -60px;
+    padding-right: 100px;
+    padding-left: 2rem;
+    z-index: 9;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.mce-send {
+    input {
+        z-index: 12;
+        width:100%;
+
+    }
+}

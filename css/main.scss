@@ -25,19 +25,17 @@
 @import "components/_selling-points.scss";  
 @import "components/_three-icons.scss";  
 @import "components/_single-vibe.scss";  
-
+ 
 // very reusable
 @import "components/_text-block.scss";
 @import "components/_sketch-square-effect.scss";
-
-
 
 // needed for form
 @import "form/_generic-form.scss"; 
 @import "form/_checkbox.scss"; 
 @import "form/_input-text.scss"; 
-@import "form/_radio.scss"; 
-@import "form/_select.scss"; 
+@import "form/_radio.scss";
+@import "form/_select.scss";  
 @import "form/_textarea.scss"; 
  
 // Utility
