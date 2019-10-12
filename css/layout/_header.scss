@@ -14,6 +14,12 @@
   .logo {
     z-index: 999;
   }
+
+  // website only: this is overwritten in the layout-fixed-app
+  @media (max-width: 900px) {
+    padding: 0 0;
+  }
+
 }
 
 header nav {

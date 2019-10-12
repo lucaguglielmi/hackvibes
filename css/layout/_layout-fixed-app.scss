@@ -9,6 +9,11 @@
 
   .header__inner {
   height: 68px;
+  
+  // overwrite website style
+  @media (max-width: 900px) {
+    padding: 0 2rem;
+  }
   }
 }
 
