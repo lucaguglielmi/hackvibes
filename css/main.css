@@ -1381,10 +1381,20 @@ header nav ul li a.is-selected {
   position: fixed;
   top: 20px;
   right: 20px;
+  cursor: pointer;
 }
 
 .load-bapp__close img {
   width: 100%;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.load-bapp__close:hover img {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .scale-in-center {

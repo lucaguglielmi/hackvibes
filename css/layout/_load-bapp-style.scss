@@ -69,11 +69,23 @@
   position: fixed;
   top: 20px;
   right: 20px;
+  cursor: pointer;
 
   img {
     width: 100%;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition:         transform .4s ease-in-out;
   }
 
+
+  &:hover {
+
+    img {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);  
+    }
+
+  }
 }
 
 
