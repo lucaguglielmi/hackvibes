@@ -1,8 +1,6 @@
 @import "../abstracts/_variables.scss";
 
-/* 
-HERO BANNER
-*/
+/* HERO BANNER */
 
 .hero-banner {
     max-width: 1200px;
@@ -11,14 +9,16 @@ HERO BANNER
     position:relative;
     height: 400px;
     background-color: #f4f4f4;
+    
 
     &.hero-banner--dark {
-        background-color: rgb(245, 213, 253);
+        background-color: #EBE1EC;
     }
 
     &.hero-banner--vibes{
-        background-color: rgb(252, 205, 244);
+        background-color: #E1E6EC;
     }
+
 }
 
         .hero-banner__content {
@@ -69,4 +69,10 @@ HERO BANNER
                 }
 
 
-       
+       .bg-stilish {
+        font-size: 16vw;
+        color: #3F00FF;
+        position: absolute;
+        top: -150px;
+        right: 20px;
+       }

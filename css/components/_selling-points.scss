@@ -31,7 +31,11 @@ SELLING POINTS
 // main Content lighgray 
 .selling-points__content {
     background-color: $color-lightgray;
-    padding: 2rem;
+    padding: 5rem;
+
+    @media (max-width: 1200px) {
+        padding: 2rem;
+    }
 }
 
 

@@ -23,12 +23,6 @@
   	background-color: $color-primary;
   	color: $color-lightgray;
 	  cursor: pointer;
-	  
-	  @media (max-width: 500px) {
-		font-size: 0.6em;
-		letter-spacing: 0.05em;
-		padding: 0.5rem 1rem;
-	  }
 }
 
 /* Basic button styles */
@@ -114,6 +108,13 @@
 /* PRIMARY BUTTON */ 
 
 .btn--primary {
+
+}
+/* accent BUTTON */ 
+
+.btn--accent {
+	background-color: #f4f4f4;
+	color: black;
 
 }
 

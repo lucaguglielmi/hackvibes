@@ -9,6 +9,11 @@ BROWSE VIBES CAROUSEL
     padding-left: 5rem;
     margin: 3rem auto;
     position: relative;
+
+    @media (max-width: 900px) {
+      border-left: 0px;
+      padding: 0px;
+    }
 }
 
 .metti-qui-il-carousel {
@@ -16,32 +21,41 @@ BROWSE VIBES CAROUSEL
     width: 100%;
     padding: 3rem;
     position:relative;
+
+    @media (max-width: 900px) {
+      padding: 2rem 0px;
+
+      p {
+        padding: 0 2rem;
+      }
+    }
 }
 
 
-/* Style from flickity example */@at-root
+/* Style from flickity example */
 
 .carousel {
-    background: #EEE;
-  }
+  background-color: transparent;
+}
   
   .carousel-cell {
-    width: 50%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    border-radius: 5px;
-    counter-increment: gallery-cell;
+    width: 33%;
+    min-width: 350px;
+    height: auto;
+    margin-right: 2rem;
+    padding: 5rem 0;
+
+    .vibes-card {
+      border-radius: 15px;
+    }
+
+
+    &:nth-child(even) {
+      margin-top: 3rem;
+    }
+
+ 
   }
   
-  /* cell number */
-  .carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-  }
 
   
