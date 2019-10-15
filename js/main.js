@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
 /* NEW TOGGLE MOBILE MENU */
 (function () {
 
@@ -15,7 +15,7 @@ $(document).ready(function(){
         $("body").toggleClass("noscroll");
     })
 
-    // whiteknight 
+    // whiteknight
 
     $(".whiteknight").on('click', function() {
         $(".js-open-vibe").removeClass("vibe--expanded");
@@ -40,6 +40,7 @@ $(document).ready(function(){
         $("body").toggleClass("noscroll");
     })
 
+
  // greynight
 
  $(".whiteknight").on('click', function() {
@@ -61,7 +62,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-    
+
 
 
 
