@@ -43,10 +43,11 @@ $(document).ready(function(){
 
  // greynight
 
- $(".whiteknight").on('click', function() {
-    $(".greynight").toggle();
-    $("body").toggleClass("noscroll");
-})
+    $(".whiteknight").on('click', function() {
+        $(".greynight").toggle();
+        $("body").toggleClass("noscroll");
+    })
+
 
 // Animate ALL anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -58,12 +59,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-
-
-
-
-
 
 
     })();

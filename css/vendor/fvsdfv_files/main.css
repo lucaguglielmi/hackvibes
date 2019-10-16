@@ -1674,6 +1674,7 @@ SKETCH SQUARE EFFECT
 
 .form-style-checkbox label {
   width: 100%;
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

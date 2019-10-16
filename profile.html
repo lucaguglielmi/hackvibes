@@ -94,12 +94,7 @@
 					We will store the information and use them to match you with another maker that have complimentary skills. After your join, you will be able to complete more Vibes to get matched with other people.
 					<br /><br />
 					Our main goal is to help you find other makers you can build stuff with, and form a network of people that build on each other's ideas.
-
-
 				<br />
-
-
-
 			</p>
 		</div>
 		</div>
@@ -110,8 +105,11 @@
 			<div class="form-avatar__wrapper">
 					<div class="form-avatar__photo">
 							<!-- <p class="form-avatar__title">Your avatar <a href="#">reload</a></p> -->
-							<img src="img/avatar/png/avatar3.png" style="width: 150px;" />
-							<a href="#"><img src="img/icons/refresh.svg" style="max-width: 20px; margin-left: 10px;"/></a>
+							<div id="pic" style="width: 150px;" onclick="displayImage()">
+								<img class="js-icon-refresh" src="img/avatar/png/avatar3.png" />
+							</div>
+							
+							<a class="form-avatar__refresh" href="javascript:void(0);" onclick="displayImage()"><img src="img/icons/refresh.svg" style="max-width: 20px; margin-left: 10px;"/></a>
 					</div>
 
 					<div class="form-avatar__name">
@@ -132,52 +130,36 @@
 
 
 				<div class="content__row">
-						<h3>What do you do ?</h3>
+						<h3> What do you do ?</h3>
 						<em>Pick one or more</em>
 						<ul class="form-style-checkbox">
-							<li>
+							<li class="js-developer">
 								<label>
-									<input type="checkbox" name="whatdoyoudo" value="developer">
+									<input type="checkbox" name="whatdoyoudo" value="developer" />
 									Developer
 								</label>
 							</li>
-							<!-- <li>
+							<li class="js-designer">
 								<label>
-									<input type="checkbox" name="whatdoyoudo" value="frontend">
-								Front-end</label>
-							</li>
-						-->
-							<li>
-								<label>
-									<input type="checkbox" name="whatdoyoudo" value="designer">
+									<input type="checkbox" name="whatdoyoudo" value="designer" />
 								Designer</label>
 							</li>
 							<li>
-									<label>
-											<input type="checkbox" name="whatdoyoudo" value="business">
+								<label class="js-skill-trigger js-marketing">
+									<input type="checkbox" name="whatdoyoudo" value="business" />
 								Marketing / Business</label>
 							</li>
-						<!-- <li>
-									<label>
-										<input type="checkbox" name="whatdoyoudo" value="marketing">
-								Marketing</label>
-							</li>
-						-->
 							<li>
-									<label class="is-selected">
-										<input type="checkbox" name="whatdoyoudo" value="other">
+									<label class="js-skill-trigger js-other">
+										<input type="checkbox" name="whatdoyoudo" value="other" />
 								It's complicated</label>
 							</li>
 						</ul>
 					</div>
 
-<!-- PLEASE NOTE:
-Allthis fields will be hidden by default, and based on the customer selection we show them. This way we can target the question for each specific type of person
--->
-
 						<!-- data-show-if="others"-->
-						<div class="content__row" data-show-if="complicated" >
-								<h3>Please tell us in the specific what you do:<em style="color: deeppink; margin-top: 6px;">data-show-if="complicated"</em></h3>
+						<div class="content__row js-show-other flip-in-hor-bottom" data-show-if="complicated">
+								<h3>Please tell us in the specific what you do:</h3>
 								<div class="form-style-textarea">
 										<label>
 												<textarea id="other_specifics"></textarea>
@@ -185,65 +167,6 @@ Allthis fields will be hidden by default, and based on the customer selection we
 								</div>
 						</div>
 
-						<!-- data-show-if="developer"-->
-						<div class="content__row" data-show-if="developer">
-								<h3>What kind of developer? backend, front-end?<em style="color: deeppink; margin-top: 6px;">data-show-if="developer"</em></h3>
-								<div class="form-style-textarea">
-										<label>
-												<textarea id="developer_kind"></textarea>
-										</label>
-								</div>
-						</div>
-						<!-- data-show-if="developer"-->
-						<div class="content__row" data-show-if="developer" >
-								<h3>What technology you know well? What you would like to work with?<em style="color: deeppink; margin-top: 6px;">data-show-if="developer"</em></h3>
-								<div class="form-style-textarea">
-										<label>
-												<textarea id="developer_tech"></textarea>
-										</label>
-								</div>
-						</div>
-
-						<!-- data-show-if="designer"-->
-						<div class="content__row" data-show-if="designer">
-								<h3>What kind of designer? UX, UI, do you have front-end skills? <em style="color: deeppink; margin-top: 6px;">data-show-if="designer"</em></h3>
-								<div class="form-style-textarea">
-										<label>
-												<textarea id="designer_type"></textarea>
-										</label>
-								</div>
-						</div>
-
-						<!-- data-show-if="designer"-->
-						<div class="content__row" data-show-if="designer">
-								<h3>Can you share some of your work online? ( not mandatory ) <em style="color: deeppink; margin-top: 6px;">data-show-if="designer"</em></h3>
-								<div class="form-style-textarea">
-										<label>
-												<textarea id="designer_work"></textarea>
-										</label>
-								</div>
-						</div>
-
-
-						<!-- data-show-if="marketing"-->
-						<div class="content__row" data-show-if="marketing">
-								<h3>Do you have entrepreneurship experience? <em style="color: deeppink; margin-top: 6px;">data-show-if="marketing"</em></h3>
-								<div class="form-style-textarea">
-										<label>
-												<textarea id="marketing_entrepreneur"></textarea>
-										</label>
-								</div>
-						</div>
-
-						<!-- data-show-if="marketing"-->
-						<div class="content__row" data-show-if="marketing">
-								<h3>What do you do at the moment? <em style="color: deeppink; margin-top: 6px;">data-show-if="marketing"</em></h3>
-								<div class="form-style-textarea">
-										<label>
-												<textarea id="marketing_moment"></textarea>
-										</label>
-								</div>
-						</div>
 
 						<div class="content__row">
 								<h3>A fun fact about you:</h3>
@@ -263,8 +186,75 @@ Allthis fields will be hidden by default, and based on the customer selection we
 									</div>
 								</div>
 
+
+
+						<!-- data-show-if="developer"-->
+						<div class="content__row js-show-developer flip-in-hor-bottom" data-show-if="developer">
+							<h3>What kind of developer? backend, front-end?</h3>
+							<div class="form-style-textarea">
+									<label>
+											<textarea id="developer_kind"></textarea>
+									</label>
+							</div>
+					</div>
+					<!-- data-show-if="developer"-->
+					<div class="content__row js-show-developer flip-in-hor-bottom" data-show-if="developer" >
+							<h3>What technology you know well? What you would like to work with?</h3>
+							<div class="form-style-textarea">
+									<label>
+											<textarea id="developer_tech"></textarea>
+									</label>
+							</div>
+					</div>
+
+					<!-- data-show-if="designer"-->
+					<div class="content__row js-show-designer flip-in-hor-bottom" data-show-if="designer">
+							<h3>What kind of designer? UX, UI, do you have front-end skills?</h3>
+							<div class="form-style-textarea">
+									<label>
+											<textarea id="designer_type"></textarea>
+									</label>
+							</div>
+					</div>
+
+					<!-- data-show-if="designer"-->
+					<div class="content__row js-show-designer flip-in-hor-bottom" data-show-if="designer">
+							<h3>Can you share some of your work online? ( not mandatory )</h3>
+							<div class="form-style-textarea">
+									<label>
+											<textarea id="designer_work"></textarea>
+									</label>
+							</div>
+					</div>
+
+
+					<!-- data-show-if="marketing"-->
+					<div class="content__row js-show-marketing flip-in-hor-bottom" data-show-if="marketing">
+							<h3>Do you have entrepreneurship experience?</h3>
+							<div class="form-style-textarea">
+									<label>
+											<textarea id="marketing_entrepreneur"></textarea>
+									</label>
+							</div>
+					</div>
+
+					<!-- data-show-if="marketing"-->
+					<div class="content__row js-show-marketing flip-in-hor-bottom" data-show-if="marketing">
+							<h3>What do you do at the moment?</h3>
+							<div class="form-style-textarea">
+									<label>
+											<textarea id="marketing_moment"></textarea>
+									</label>
+							</div>
+					</div>
+
 							<div class="content__row">
-									<h3>How would you do something about <strong>Global warming <img src="img/icons/refresh.svg" style="max-width: 20px; margin-right: 10px;"></strong> using <strong>the blockchain <img src="img/icons/refresh.svg" style="max-width: 20px; margin-right: 10px;"></strong></h3>
+									<h3>How would you do something about 
+										<strong id="js-problem-container">Global warming</strong> 
+										<span><img class="js-icon-refresh" id="js-problem" src="img/icons/refresh.svg" style="max-width: 20px; margin-right: 10px;"></span> using 
+										<strong id="js-solution-container">the blockchain</strong> 
+										<span><img class="js-icon-refresh" id="js-solution" src="img/icons/refresh.svg" style="max-width: 20px; margin-right: 10px;"></span>
+									</h3>
 									<div class="form-style-textarea">
 											<label>
 													<textarea id="question"></textarea>
@@ -277,7 +267,7 @@ Allthis fields will be hidden by default, and based on the customer selection we
 										<h3>Add your E-mail so that your match can contact you</h3>
 										<div class="form-style-input-text">
 												<label>
-														<img src="img/icons/email.svg" style="height: 26px; opacity: 0.3;" />
+													<!-- 	<img src="img/icons/email.svg" style="height: 26px; opacity: 0.3;" />   -->
 														<input id="email" type="text" placeholder="E-mail" />
 												</label>
 										</div>
@@ -300,15 +290,15 @@ Allthis fields will be hidden by default, and based on the customer selection we
 
 </div>
 
-
-
-
-
-	<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+	<!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/profile.js"></script>
+	<script src="js/random-text-1.js"></script>
+	<script src="js/random-text-2.js"></script>
+	<script src="js/random-avatar-image.js"></script>
 	<script src="js/db.js"></script>
 	<link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js">
 
