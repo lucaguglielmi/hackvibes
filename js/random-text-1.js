@@ -6,7 +6,7 @@ $(document).ready(function() {
   })
 
   function showQuote() {
-    var quotes = ["Global warming", "problem one", "problem two", "problem three"];
+    var quotes = ["Global warming", "lack of economic opportunity and employment", "lack of education", "food and water security", "Government accountability", "Biosecurity", "risks from AI"];
     var index = Math.floor(Math.random() * (quotes.length + 1));
     var entry = quotes[index];
     entry = entry.split('^');

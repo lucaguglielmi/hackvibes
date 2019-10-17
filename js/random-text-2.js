@@ -6,7 +6,7 @@ $(document).ready(function() {
   })
 
   function showQuote() {
-    var quotes = ["Blockchain", "solution one", "solution two", "solution three"];
+    var quotes = ["Blockchain", "AI", "Crowd Sourcing", "Your Friends"];
     var index = Math.floor(Math.random() * (quotes.length + 1));
     var entry = quotes[index];
     entry = entry.split('^');

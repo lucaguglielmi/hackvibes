@@ -17,10 +17,19 @@ $(document).ready(function(){
       var question = $('#question').val();
       var email = $('#email').val();
 
+      var isComplicated = $('#cb_complicated').is(":checked");
+      var isMarketing = $('#cb_marketing').is(":checked");
+      var isDesigner = $('#cb_designer').is(":checked");
+      var isDeveloper = $('#cb_developer').is(":checked");
+
       // check if nickname exists
 
       var formData = {
         nickname: nickname,
+        isComplicated: isComplicated.toString(),
+        isMarketing: isMarketing.toString(),
+        isDesigner: isDesigner.toString(),
+        isDeveloper: isDeveloper.toString(),
         other_specifics: other_specifics,
         developer_kind: developer_kind,
         developer_tech: developer_tech,
@@ -38,6 +47,7 @@ $(document).ready(function(){
 
       $.ajax({
         url : 'https://hackvibes-server.herokuapp.com/register/',
+        // url : 'http://127.0.0.1:8000/register/',
         type : 'POST',
         dataType:'json',
         data : JSON.stringify(formData),
@@ -53,5 +63,6 @@ $(document).ready(function(){
             console.log(JSON.stringify(request))
         }
     });
+
   })
 });
