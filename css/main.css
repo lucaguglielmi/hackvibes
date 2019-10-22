@@ -2077,17 +2077,18 @@ VIBE LAYOUT
 */
 .vibe-card {
   width: 100%;
-  background-color: black;
+  background-color: #222;
   padding: 2rem 2rem;
   border-radius: 4px;
   position: relative;
-  height: 260px;
+  height: 360px;
   display: block;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
 .vibe-card:hover {
+  background-color: #3F00FF;
   cursor: pointer;
   scale: 1.05;
   -webkit-transition: all 0.3s ease;
@@ -2202,90 +2203,6 @@ VIBE LAYOUT
 }
 
 /* ALL STYLES */
-.style-1 {
-  background-color: #f8381b;
-}
-
-.style-1 a .vibe-card__sub, .style-1 a .vibe-card__number, .style-1 a .vibe-card__number:after, .style-1 a .vibe-card__title {
-  color: #e7d4d4;
-}
-
-.style-1 a .vibe-card__number:after {
-  background-color: #e7d4d4;
-}
-
-.style-2 {
-  background-color: #6316fd;
-}
-
-.style-2 a .vibe-card__sub, .style-2 a .vibe-card__number, .style-2 a .vibe-card__number:after, .style-2 a .vibe-card__title {
-  color: #e0d5de;
-}
-
-.style-2 a .vibe-card__number:after {
-  background-color: #e0d5de;
-}
-
-.style-3 {
-  background-color: #950b08;
-}
-
-.style-3 a .vibe-card__sub, .style-3 a .vibe-card__number, .style-3 a .vibe-card__number:after, .style-3 a .vibe-card__title {
-  color: #e4be25;
-}
-
-.style-3 a .vibe-card__number:after {
-  background-color: #e4be25;
-}
-
-.style-4 {
-  background-color: #950c85;
-}
-
-.style-4 a .vibe-card__sub, .style-4 a .vibe-card__number, .style-4 a .vibe-card__number:after, .style-4 a .vibe-card__title {
-  color: #fbbf1c;
-}
-
-.style-4 a .vibe-card__number:after {
-  background-color: #fbbf1c;
-}
-
-.style-5 {
-  background-color: #e4be25;
-}
-
-.style-5 a .vibe-card__sub, .style-5 a .vibe-card__number, .style-5 a .vibe-card__number:after, .style-5 a .vibe-card__title {
-  color: #ab3503;
-}
-
-.style-5 a .vibe-card__number:after {
-  background-color: #ab3503;
-}
-
-.style-6 {
-  background-color: #7f1cd5;
-}
-
-.style-6 a .vibe-card__sub, .style-6 a .vibe-card__number, .style-6 a .vibe-card__number:after, .style-6 a .vibe-card__title {
-  color: #d8d2db;
-}
-
-.style-6 a .vibe-card__number:after {
-  background-color: #7f1cd5;
-}
-
-.style-7 {
-  background-color: #e50461;
-}
-
-.style-7 a .vibe-card__sub, .style-7 a .vibe-card__number, .style-7 a .vibe-card__number:after, .style-7 a .vibe-card__titl {
-  color: #d7c4ca;
-}
-
-.style-7 a .vibe-card__number:after {
-  background-color: #d7c4ca;
-}
-
 /* 
 TEXT BLOCK
 */
