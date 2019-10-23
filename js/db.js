@@ -53,7 +53,18 @@ $(document).ready(function(){
         data : JSON.stringify(formData),
         success : function(data) {
             console.log('Data: '+ data);
-            console.log(data.status)
+            console.log(data.status);
+
+            if(data.status == 'user-exists'){
+              $('#response').text("Nickname already exists - please try something else.");
+              $('#response').show();
+            }else if(data.status == 'saved'){
+              $('#response').text("Profile Created");
+              $('#response').show();
+            }else{
+              $('#response').text("Something Went Wrong - Please Try Again");
+              $('#response').show();
+            }
             // data.status = user-exists   ---> nickname already taken
             // data.status = saved         ---> saved to db
         },
@@ -61,6 +72,8 @@ $(document).ready(function(){
         {
             console.log("Request: "+ JSON.stringify(request));
             console.log(JSON.stringify(request))
+            $('#response').text("Error During Submit - " + error);
+            $('#response').show();
         }
     });
 
