@@ -38,4 +38,13 @@ $(".js-other").on('change', function() {
 });
 
 
+
+    // profile response close button
+
+    $(".response__close").on('click', function() {
+        $("#response").hide();
+    })
+
+
+
 });

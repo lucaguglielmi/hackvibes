@@ -1,0 +1,90 @@
+@import "../abstracts/_variables.scss";
+
+// RESPONSE DIV AFTER SENDING THE PROFILE
+
+#response {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #3F00FF; 
+  z-index:999;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+} 
+
+.response__inner {
+  display: inline-block;
+  max-width: 850px;
+  margin:auto;
+  padding: 3rem;
+  margin-top: 4rem auto;
+
+  h1 {
+    color: white;
+    letter-spacing: 0.03em;
+  } 
+  
+  h2 {
+    color: white;
+    letter-spacing: 0.02em;
+  }
+  p {
+    color: white;
+    letter-spacing: 0.03em;
+    font-size: 1.1em;
+    padding: o 2rem;
+  }
+}
+
+
+.response__close {
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  cursor: pointer;
+
+  img {
+    max-width:100%;
+  }
+}
+
+/* MATCHING CONTAINER */
+.matching-in-progress {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+// HANDSHAKE
+
+.handshake {
+display: flex;
+width:100%;
+align-items:Center;
+justify-content:Center;
+
+}
+
+
+.handshake-profile__one {
+  .avatar {
+    max-width: 200px;
+  }
+}
+
+
+.handshake-profile__two {
+  .avatar {
+    max-width: 200px;
+  }
+}
+.handshake-profile__icon {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
