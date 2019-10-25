@@ -46,5 +46,8 @@ $(".js-other").on('change', function() {
     })
 
 
+    // sync img src of the avatar to the confirmation message
+    $("#pic").attr("src", $("#pic-loading").attr("src"));
+
 
 });

@@ -11,6 +11,19 @@
     background-color: #f4f4f4;
     
 
+    @media (max-width: 700px) {
+        font-size: 1em;
+        height: 300px;
+        margin-bottom: 0rem;
+    }
+    
+
+    @media (max-width: 600px) {
+        font-size: 1em;
+        height: 200px;
+    }
+
+
     &.hero-banner--dark {
         background-color: #EBE1EC;
     }
@@ -35,6 +48,10 @@
 
             h1 {
                 margin-top: 0px;
+
+            @media (max-width: 600px) {
+                font-size: 1.6em;
+            }
             }
         }
 

@@ -28,8 +28,50 @@ ul {
             margin-top: 3rem;
         }
 
-        @media (max-width: 960px) {
+        @media (max-width: 1200px) {
+
+            .vibe-card {
+                font-size: 0.9em;
+                height: auto;
+                min-height: auto;
+                padding-bottom: 5rem;
+            }
+        }
+
+
+        @media (max-width: 900px) {
+            .vibe-card {
+                font-size: 0.8em;
+              }
+        }
+
+        @media (max-width: 700px) {
             width: 46%;
+            margin: 2% 2%;
+
+            .vibe-card {
+                font-size: 0.9em;
+                height: auto;
+                min-height: auto;
+                padding-bottom: 5rem;
+            }
+                &:nth-child(2), &:nth-child(5), &:nth-child(8), &:nth-child(11), &:nth-child(14), &:nth-child(17) {
+                    margin: 2% 2%;
+                }
+        }
+
+
+        @media (max-width: 600px) {
+            .vibe-card {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            width: 100%;
+            .vibe-card {
+                font-size: 0.8em;
+            }
             margin: 2% 2%;
                 &:nth-child(2), &:nth-child(5), &:nth-child(8), &:nth-child(11), &:nth-child(14), &:nth-child(17) {
                     margin: 2% 2%;
@@ -105,10 +147,33 @@ VIBE LAYOUT
 /* VIBE EXPANDED */
 .beta-message {
     display: none;
+    padding: 2rem 3rem;
 
-    background-color: white;
-    padding: 3rem 5rem;
+    img {
+        height: 100px;
+    }
 
+    h2 {
+        color: white;
+        font-size: 2em;
+        letter-spacing:0.03em;
+    }
+    p {
+        color:white;
+        font-size: 1.4em;
+        letter-spacing:0.03em;
+    }
+
+    &:hover {
+        background-color: #3F00FF;
+    }
+
+    .btn.btn--primary {
+        border: 1px solid white;
+        max-width: 300px;
+        margin: auto;
+        background-color: transparent;
+    }
 }
 
 .vibe--expanded {
@@ -131,6 +196,14 @@ VIBE LAYOUT
 
     .beta-message {
         display: block;
+    }
+
+    @media (max-width:900px) {
+
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     }
 }
   

@@ -16,4 +16,9 @@ TEXT BLOCK
     h2, h3 {
         margin-top: 1rem;
     }
+
+    @media (max-width: 900px) {
+        font-size: 0.9em;
+
+    }
 }

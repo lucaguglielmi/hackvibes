@@ -1285,7 +1285,7 @@ header nav ul li a.is-selected {
 
 .content-overflow {
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 4rem 4rem 4rem;
 }
 
 /* AVATAR */
@@ -1719,6 +1719,21 @@ BROWSE VIBES CAROUSEL
   background-color: #f4f4f4;
 }
 
+@media (max-width: 700px) {
+  .hero-banner {
+    font-size: 1em;
+    height: 300px;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-banner {
+    font-size: 1em;
+    height: 200px;
+  }
+}
+
 .hero-banner.hero-banner--dark {
   background-color: #EBE1EC;
 }
@@ -1750,6 +1765,12 @@ BROWSE VIBES CAROUSEL
 
 .hero-banner__content h1 {
   margin-top: 0px;
+}
+
+@media (max-width: 600px) {
+  .hero-banner__content h1 {
+    font-size: 1.6em;
+  }
 }
 
 .hero-banner__illustration {
@@ -1930,7 +1951,7 @@ SELLING POINTS
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 0.8em;
+  font-size: 1em;
   letter-spacing: 0.05em;
   font-weight: 600;
 }
@@ -1943,7 +1964,7 @@ SELLING POINTS
 
 .selling-points__ul li h3 .solidline {
   height: 2px;
-  width: 50px;
+  width: 20px;
   background-color: #3F00FF;
   margin-right: 0.5rem;
   display: inline-block;
@@ -2062,10 +2083,50 @@ VIBE LAYOUT
   margin-top: 3rem;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
+  .vibe-grid ul li .vibe-card {
+    font-size: 0.9em;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .vibe-grid ul li .vibe-card {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 700px) {
   .vibe-grid ul li {
     width: 46%;
     margin: 2% 2%;
+  }
+  .vibe-grid ul li .vibe-card {
+    font-size: 0.9em;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 5rem;
+  }
+  .vibe-grid ul li:nth-child(2), .vibe-grid ul li:nth-child(5), .vibe-grid ul li:nth-child(8), .vibe-grid ul li:nth-child(11), .vibe-grid ul li:nth-child(14), .vibe-grid ul li:nth-child(17) {
+    margin: 2% 2%;
+  }
+}
+
+@media (max-width: 600px) {
+  .vibe-grid ul li .vibe-card {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .vibe-grid ul li {
+    width: 100%;
+    margin: 2% 2%;
+  }
+  .vibe-grid ul li .vibe-card {
+    font-size: 0.8em;
   }
   .vibe-grid ul li:nth-child(2), .vibe-grid ul li:nth-child(5), .vibe-grid ul li:nth-child(8), .vibe-grid ul li:nth-child(11), .vibe-grid ul li:nth-child(14), .vibe-grid ul li:nth-child(17) {
     margin: 2% 2%;
@@ -2139,8 +2200,34 @@ VIBE LAYOUT
 /* VIBE EXPANDED */
 .beta-message {
   display: none;
-  background-color: white;
-  padding: 3rem 5rem;
+  padding: 2rem 3rem;
+}
+
+.beta-message img {
+  height: 100px;
+}
+
+.beta-message h2 {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 0.03em;
+}
+
+.beta-message p {
+  color: white;
+  font-size: 1.4em;
+  letter-spacing: 0.03em;
+}
+
+.beta-message:hover {
+  background-color: #3F00FF;
+}
+
+.beta-message .btn.btn--primary {
+  border: 1px solid white;
+  max-width: 300px;
+  margin: auto;
+  background-color: transparent;
 }
 
 .vibe--expanded {
@@ -2165,6 +2252,15 @@ VIBE LAYOUT
 
 .vibe--expanded .beta-message {
   display: block;
+}
+
+@media (max-width: 900px) {
+  .vibe--expanded {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
 }
 
 /* WHITEKNIGHT */
@@ -2218,6 +2314,12 @@ TEXT BLOCK
 
 .generic-text-block h2, .generic-text-block h3 {
   margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .generic-text-block {
+    font-size: 0.9em;
+  }
 }
 
 /* 
@@ -2642,6 +2744,13 @@ SKETCH SQUARE EFFECT
 }
 
 /* PRIMARY BUTTON */
+/* PRIMARY BUTTON */
+.btn--black {
+  background-color: black;
+  color: white;
+  width: auto !important;
+}
+
 /* accent BUTTON */
 .btn--accent {
   background-color: #f4f4f4;
