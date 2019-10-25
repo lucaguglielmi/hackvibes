@@ -1642,6 +1642,7 @@ ADD YOUR PROFILE
 .js-icon-refresh:hover {
   -webkit-animation: refreshrotation 1s infinite linear;
   animation: refreshrotation 1s infinite linear;
+  scale: 1.1;
 }
 
 @-webkit-keyframes refreshrotation {
