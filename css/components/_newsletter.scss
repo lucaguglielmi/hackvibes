@@ -46,6 +46,10 @@
     z-index: 9;
     border: 1px solid #ccc;
     background-color: white;
+
+    @media (max-width:800px) {
+        width:100%;
+    }
 }
 
 .mce-send {

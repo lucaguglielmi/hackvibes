@@ -1905,6 +1905,12 @@ BROWSE VIBES CAROUSEL
   background-color: white;
 }
 
+@media (max-width: 800px) {
+  #mce-EMAIL {
+    width: 100%;
+  }
+}
+
 .mce-send input {
   z-index: 12;
   width: 100%;
