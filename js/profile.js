@@ -18,8 +18,6 @@ $(document).ready(function(){
 /* PROFILE PAGE --- TO DO BETTER */
 $(".js-developer").on('change', function() {
  $(".js-show-developer").toggle();
- console.log("test");    
- console.log(this);
 });
 
 
@@ -44,10 +42,6 @@ $(".js-other").on('change', function() {
     $(".response__close").on('click', function() {
         $("#response").hide();
     })
-
-
-    // sync img src of the avatar to the confirmation message
-    $("#pic").attr("src", $("#pic-loading").attr("src"));
 
 
 });

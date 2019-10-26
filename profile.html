@@ -22,169 +22,174 @@
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 	<![endif]-->
 
-<div class="vibes-app">
+	<div class="vibes-app">
 
 		<header>
-				<div class="header__inner">
-						<div class="logo">
-								<a href="/index.html">
-										<img src="img/logo/hackvibes-logo.svg" style="max-height: 30px;" />
-								</a>
-						</div>
-						<nav class="hide-on-mobile">
-								<ul>
-										<li><a href="index.html">Get matched</a></li>
-										<li><a href="commit-to-build.html">Commit to Build</a></li>
-										<li><a href="vibes.html">Vibes</a></li>
-										<li><a href="profile.html" class="is-selected">My profile</a></li>
-								</ul>
-						</nav>
-						<div class="mobile-menu js-trigger-menu hide-on-desktop">
-							<!-- Mobile menu icon -->
-							<div class="hamburger-wrapper">
-										<div class="hamburger-menu"></div>
-									  </div>
-							</div>
-							<!-- end mobile menu icon -->
+			<div class="header__inner">
+				<div class="logo">
+					<a href="/index.html">
+						<img src="img/logo/hackvibes-logo.svg" style="max-height: 30px;" />
+					</a>
 				</div>
-			</header>
-
-
-			<div class="mobile-navigation">
-			<div class="mobile-navigation__inner">
+				<nav class="hide-on-mobile">
 					<ul>
-							<li>
-								<a href="/index.html">
-									Get matched
-								</a>
-							</li>
-							<li>
-								<a href="/commit-to-build.html">
-									Commit to build
-								</a>
-							</li>
-							<li>
-								<a href="/vibes.html">
-									Vibes
-								</a>
-							</li>
-							<li>
-								<a href="/profile.html">
-									My profile
-								</a>
-							</li>
+						<li><a href="index.html">Get matched</a></li>
+						<li><a href="commit-to-build.html">Commit to Build</a></li>
+						<li><a href="vibes.html">Vibes</a></li>
+						<li><a href="profile.html" class="is-selected">My profile</a></li>
 					</ul>
+				</nav>
+				<div class="mobile-menu js-trigger-menu hide-on-desktop">
+					<!-- Mobile menu icon -->
+					<div class="hamburger-wrapper">
+						<div class="hamburger-menu"></div>
+					</div>
+				</div>
+				<!-- end mobile menu icon -->
+			</div>
+		</header>
+
+
+		<div class="mobile-navigation">
+			<div class="mobile-navigation__inner">
+				<ul>
+					<li>
+						<a href="/index.html">
+							Get matched
+						</a>
+					</li>
+					<li>
+						<a href="/commit-to-build.html">
+							Commit to build
+						</a>
+					</li>
+					<li>
+						<a href="/vibes.html">
+							Vibes
+						</a>
+					</li>
+					<li>
+						<a href="/profile.html">
+							My profile
+						</a>
+					</li>
+				</ul>
 			</div>
 
 
-			</div>
-			<!-- MAIN -->
-<main>
-	<div class="main__inner">
-		<div class="main__sidebar">
-			<div class="sidebar">
-				<div class="sidebar__vibe-number">
-					VIBE NUMBER #001
+		</div>
+		<!-- MAIN -->
+		<main>
+			<div class="main__inner">
+				<div class="main__sidebar">
+					<div class="sidebar">
+						<div class="sidebar__vibe-number">
+							VIBE NUMBER #001
+						</div>
+
+						<h1 class="sidebar__title">Your Profile</h1>
+						<p class="sidebar__p">
+							Welcome to hackvibes. You can join the Beta version just by completing your profile. This
+							will be your first Vibe.
+							<br /><br />
+							We will store the information and use them to match you with another maker that have
+							complementary skills. After your join, you will be able to complete more Vibes to get
+							matched with other people.
+							<br /><br />
+							Our main goal is to help you find other makers you can build stuff with, and form a network
+							of people that build on each other's ideas.
+							<br />
+						</p>
+					</div>
 				</div>
 
-				<h1 class="sidebar__title">Your Profile</h1>
-				<p class="sidebar__p">
-					Welcome to hackvibes. You can join the Beta version just by completing your profile. This will be your first Vibe.
-					<br /><br />
-					We will store the information and use them to match you with another maker that have complementary skills. After your join, you will be able to complete more Vibes to get matched with other people.
-					<br /><br />
-					Our main goal is to help you find other makers you can build stuff with, and form a network of people that build on each other's ideas.
-				<br />
-			</p>
-		</div>
-		</div>
+				<div class="main__content">
+					<div class="content-overflow custom-scrollbar">
 
-	<div class="main__content">
-		<div class="content-overflow custom-scrollbar">
+						<div class="form-avatar__wrapper">
+							<div class="form-avatar__photo">
+								<!-- <p class="form-avatar__title">Your avatar <a href="#">reload</a></p> -->
+								<div id="pic" style="width: 150px;" onclick="displayImage()">
+									<img class="js-icon-refresh" src="img/avatar/png/avatar3.png" />
+								</div>
 
-			<div class="form-avatar__wrapper">
-					<div class="form-avatar__photo">
-							<!-- <p class="form-avatar__title">Your avatar <a href="#">reload</a></p> -->
-							<div id="pic" style="width: 150px;" onclick="displayImage()">
-								<img class="js-icon-refresh" src="img/avatar/png/avatar3.png" />
+								<a class="form-avatar__refresh" href="javascript:void(0);" onclick="displayImage()"><img
+										src="img/icons/refresh.svg" style="max-width: 20px; margin-left: 10px;" /></a>
 							</div>
 
-							<a class="form-avatar__refresh" href="javascript:void(0);" onclick="displayImage()"><img src="img/icons/refresh.svg" style="max-width: 20px; margin-left: 10px;"/></a>
-					</div>
-
-					<div class="form-avatar__name">
-							<h3>Your nickname:
-							</h3>
+							<div class="form-avatar__name">
+								<h3>Your nickname:
+								</h3>
 								<div class="form-style-input-text">
-										<label>
-												<input id="nickname" type="text" />
-										</label>
-									</div>
+									<label>
+										<input id="nickname" type="text" />
+									</label>
+								</div>
+							</div>
+
+
 						</div>
 
 
-			</div>
 
 
 
-
-
-				<div class="content__row">
-						<h3> What do you do ?</h3>
-						<em>Pick one or more</em>
-						<ul class="form-style-checkbox">
-							<li class="js-developer">
-								<label>
-									<input id="cb_developer" type="checkbox" name="whatdoyoudo" value="developer" />
-									Developer
-								</label>
-							</li>
-							<li class="js-designer">
-								<label>
-									<input id="cb_designer" type="checkbox" name="whatdoyoudo" value="designer" />
-								Designer</label>
-							</li>
-							<li>
-								<label class="js-skill-trigger js-marketing">
-									<input id="cb_marketing" type="checkbox" name="whatdoyoudo" value="business" />
-								Marketing / Business</label>
-							</li>
-							<li>
+						<div class="content__row">
+							<h3> What do you do ?</h3>
+							<em>Pick one or more</em>
+							<ul class="form-style-checkbox">
+								<li class="js-developer">
+									<label>
+										<input id="cb_developer" type="checkbox" name="whatdoyoudo" value="developer" />
+										Developer
+									</label>
+								</li>
+								<li class="js-designer">
+									<label>
+										<input id="cb_designer" type="checkbox" name="whatdoyoudo" value="designer" />
+										Designer</label>
+								</li>
+								<li>
+									<label class="js-skill-trigger js-marketing">
+										<input id="cb_marketing" type="checkbox" name="whatdoyoudo" value="business" />
+										Marketing / Business</label>
+								</li>
+								<li>
 									<label class="js-skill-trigger js-other">
 										<input id="cb_complicated" type="checkbox" name="whatdoyoudo" value="other" />
-								It's complicated</label>
-							</li>
-						</ul>
-					</div>
+										It's complicated</label>
+								</li>
+							</ul>
+						</div>
 
 						<!-- data-show-if="others"-->
 						<div class="content__row js-show-other flip-in-hor-bottom" data-show-if="complicated">
-								<h3>Please tell us in the specific what you do:</h3>
-								<div class="form-style-textarea">
-										<label>
-												<textarea id="other_specifics"></textarea>
-										</label>
-								</div>
+							<h3>Please tell us in the specific what you do:</h3>
+							<div class="form-style-textarea">
+								<label>
+									<textarea id="other_specifics"></textarea>
+								</label>
+							</div>
 						</div>
 
 
 						<div class="content__row">
-								<h3>A fun fact about you:</h3>
-								<div class="form-style-textarea">
-										<label>
-												<textarea id="funfact"></textarea>
-										</label>
-								</div>
+							<h3>A fun fact about you:</h3>
+							<div class="form-style-textarea">
+								<label>
+									<textarea id="funfact"></textarea>
+								</label>
 							</div>
+						</div>
 
-							<div class="content__row">
-									<h3>Do you have an idea you would like to share?</h3>
-									<div class="form-style-textarea">
-											<label>
-													<textarea id="idea"></textarea>
-											</label>
-									</div>
-								</div>
+						<div class="content__row">
+							<h3>Do you have an idea you would like to share?</h3>
+							<div class="form-style-textarea">
+								<label>
+									<textarea id="idea"></textarea>
+								</label>
+							</div>
+						</div>
 
 
 
@@ -192,149 +197,147 @@
 						<div class="content__row js-show-developer flip-in-hor-bottom" data-show-if="developer">
 							<h3>What kind of developer? backend, front-end?</h3>
 							<div class="form-style-textarea">
-									<label>
-											<textarea id="developer_kind"></textarea>
-									</label>
+								<label>
+									<textarea id="developer_kind"></textarea>
+								</label>
 							</div>
-					</div>
-					<!-- data-show-if="developer"-->
-					<div class="content__row js-show-developer flip-in-hor-bottom" data-show-if="developer" >
+						</div>
+						<!-- data-show-if="developer"-->
+						<div class="content__row js-show-developer flip-in-hor-bottom" data-show-if="developer">
 							<h3>What technology you know well? What you would like to work with?</h3>
 							<div class="form-style-textarea">
-									<label>
-											<textarea id="developer_tech"></textarea>
-									</label>
+								<label>
+									<textarea id="developer_tech"></textarea>
+								</label>
 							</div>
-					</div>
+						</div>
 
-					<!-- data-show-if="designer"-->
-					<div class="content__row js-show-designer flip-in-hor-bottom" data-show-if="designer">
+						<!-- data-show-if="designer"-->
+						<div class="content__row js-show-designer flip-in-hor-bottom" data-show-if="designer">
 							<h3>What kind of designer? UX, UI, do you have front-end skills?</h3>
 							<div class="form-style-textarea">
-									<label>
-											<textarea id="designer_type"></textarea>
-									</label>
+								<label>
+									<textarea id="designer_type"></textarea>
+								</label>
 							</div>
-					</div>
+						</div>
 
-					<!-- data-show-if="designer"-->
-					<div class="content__row js-show-designer flip-in-hor-bottom" data-show-if="designer">
+						<!-- data-show-if="designer"-->
+						<div class="content__row js-show-designer flip-in-hor-bottom" data-show-if="designer">
 							<h3>Can you share some of your work online? ( not mandatory )</h3>
 							<div class="form-style-textarea">
-									<label>
-											<textarea id="designer_work"></textarea>
-									</label>
+								<label>
+									<textarea id="designer_work"></textarea>
+								</label>
 							</div>
-					</div>
+						</div>
 
 
-					<!-- data-show-if="marketing"-->
-					<div class="content__row js-show-marketing flip-in-hor-bottom" data-show-if="marketing">
+						<!-- data-show-if="marketing"-->
+						<div class="content__row js-show-marketing flip-in-hor-bottom" data-show-if="marketing">
 							<h3>Do you have entrepreneurship experience?</h3>
 							<div class="form-style-textarea">
-									<label>
-											<textarea id="marketing_entrepreneur"></textarea>
-									</label>
+								<label>
+									<textarea id="marketing_entrepreneur"></textarea>
+								</label>
 							</div>
-					</div>
+						</div>
 
-					<!-- data-show-if="marketing"-->
-					<div class="content__row js-show-marketing flip-in-hor-bottom" data-show-if="marketing">
+						<!-- data-show-if="marketing"-->
+						<div class="content__row js-show-marketing flip-in-hor-bottom" data-show-if="marketing">
 							<h3>What do you do at the moment?</h3>
 							<div class="form-style-textarea">
-									<label>
-											<textarea id="marketing_moment"></textarea>
-									</label>
+								<label>
+									<textarea id="marketing_moment"></textarea>
+								</label>
 							</div>
+						</div>
+
+						<div class="content__row">
+							<h3>How would you do something about
+								<strong id="js-problem-container">Global warming</strong>
+								<span><img class="js-icon-refresh" id="js-problem" src="img/icons/refresh.svg"
+										style="max-width: 20px; margin-right: 10px;"></span> using
+								<strong id="js-solution-container">the blockchain</strong>
+								<span><img class="js-icon-refresh" id="js-solution" src="img/icons/refresh.svg"
+										style="max-width: 20px; margin-right: 10px;"></span>
+							</h3>
+							<div class="form-style-textarea">
+								<label>
+									<textarea id="question"></textarea>
+								</label>
+							</div>
+						</div>
+
+
+						<div class="content__row">
+							<h3>Add your E-mail so that your match can contact you</h3>
+							<div class="form-style-input-text">
+								<label>
+									<!-- 	<img src="img/icons/email.svg" style="height: 26px; opacity: 0.3;" />   -->
+									<input id="email" type="text" placeholder="E-mail" />
+								</label>
+							</div>
+						</div>
+
 					</div>
 
-							<div class="content__row">
-									<h3>How would you do something about
-										<strong id="js-problem-container">Global warming</strong>
-										<span><img class="js-icon-refresh" id="js-problem" src="img/icons/refresh.svg" style="max-width: 20px; margin-right: 10px;"></span> using
-										<strong id="js-solution-container">the blockchain</strong>
-										<span><img class="js-icon-refresh" id="js-solution" src="img/icons/refresh.svg" style="max-width: 20px; margin-right: 10px;"></span>
-									</h3>
-									<div class="form-style-textarea">
-											<label>
-													<textarea id="question"></textarea>
-											</label>
-									</div>
-								</div>
+				</div>
+			</div>
 
+		</main>
 
-								<div class="content__row">
-										<h3>Add your E-mail so that your match can contact you</h3>
-										<div class="form-style-input-text">
-												<label>
-													<!-- 	<img src="img/icons/email.svg" style="height: 26px; opacity: 0.3;" />   -->
-														<input id="email" type="text" placeholder="E-mail" />
-												</label>
-										</div>
-									</div>
+		<footer>
+			<div class="footer__inner">
+				<!-- <button class="btn-square btn--just-text footer__help">QUESTIONS?</button>  -->
+				<button id='save' class="btn-square btn--animate footer__save">SAVE</button>
+			</div>
+		</footer>
 
-</div>
+		<!-- Page to show when profile is submitted -->
+		<div id="response" style="display:none;">
 
-</div>
-</div>
+			<a class="response__close">
+				<img src="/img/icons/cancel.svg" />
+			</a>
 
-</main>
+			<div class="response__inner">
+				<h1>We have got your profile!</h1>
+				<p>Hackvibes is still in Beta and we will do the first matching November the 30th</p>
+				<p>Check your E-mail, we will be matching you with a likeminded individual of complimentary skills for a
+					chat. Whatever you come up with, it's up to you! </p>
 
-<footer>
-	<div class="footer__inner">
-		<!-- <button class="btn-square btn--just-text footer__help">QUESTIONS?</button>  -->	
-			<button id='save' class="btn-square btn--animate footer__save">SAVE</button>
-	</div>
-</footer>
+				<div class="matching-in-progress">
+					<h2>Matching in progress</h2>
 
-<!-- Thank you page -->
-<div id="response" style="display:none;">
+					<div class="handshake">
 
-	<a class="response__close">
-<img src="/img/icons/cancel.svg" />
-	</a>
-	
-	<div class="response__inner">
-		<h1>We have got your profile!</h1>
-		<p>Hackvibes is still in Beta and we will do the first matching November the 30th</p>
-		<p>Check your E-mail, we will be matching you with a likeminded individual of complimentary skills for a chat. Whatever you come up with, it's up to you! </p>
+						<div id="pic-mirrored" class="handshake-profile__one">
+							<img class="avatar" src="/img/avatar/png/avatar1.png" />
+						</div>
+						<div class="handshake-profile__icon">
+							<img src="/img/icons/handshake-top.svg" />
+							<img src="/img/icons/handshake.svg" />
+							<img src="/img/icons/handshake-bottom.svg" />
+						</div>
+						<div class="handshake-profile__two">
+							<img class="avatar" src="/img/avatar/animated-avatar.gif" />
+						</div>
 
-		<div class="matching-in-progress">
-				<h2>Matching in progress</h2>
+					</div>
 
-				<div class="handshake">
-
-						<div class="handshake-profile__one">
-								<img id="pic-loading" class="avatar" src="/img/avatar/png/avatar1.png" />	
-							</div>
-							<div class="handshake-profile__icon">
-									<img src="/img/icons/handshake-top.svg" />	
-									<img src="/img/icons/handshake.svg" />	
-									<img src="/img/icons/handshake-bottom.svg" />	
-							</div>
-							<div class="handshake-profile__two">
-									<img class="avatar" src="/img/avatar/animated-avatar.gif" />	
-								</div>
 
 				</div>
-
-
 			</div>
 		</div>
 
+	</div>
 
-
-
-	</div>							
-
-</div>
-
-
-
-</div>
+	</div>
 
 	<!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script> -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
@@ -346,14 +349,14 @@
 	<link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148910838-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148910838-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'UA-148910838-1');
-</script>
+		gtag('config', 'UA-148910838-1');
+	</script>
 
 </body>
 
