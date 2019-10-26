@@ -1305,6 +1305,40 @@ header nav ul li a.is-selected {
   padding: 0 0 3rem 0;
 }
 
+@media (max-width: 500px) {
+  .form-avatar__wrapper {
+    padding: 0 0 1rem 0;
+  }
+  .form-avatar__wrapper .form-avatar__name {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-avatar__wrapper .form-avatar__name h3 {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0 0 0;
+  }
+  .form-avatar__wrapper .form-avatar__name .form-style-input-text {
+    max-width: 100%;
+    width: 100%;
+  }
+  .form-avatar__wrapper .form-avatar__name .form-style-input-text label {
+    max-width: 100%;
+    width: 100%;
+  }
+  .form-avatar__wrapper .form-avatar__name .form-style-input-text input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .form-avatar__wrapper .form-avatar__photo {
+    padding: 0 5rem 0rem 5rem;
+  }
+}
+
 .form-avatar__name {
   margin-right: auto;
 }
@@ -2456,6 +2490,14 @@ SKETCH SQUARE EFFECT
 
 .form-style-checkbox label:hover {
   border-color: #000000;
+}
+
+@media (max-width: 800px) {
+  .form-style-checkbox label {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.5em;
+    font-size: 0.8em;
+  }
 }
 
 .form-style-checkbox label:before {

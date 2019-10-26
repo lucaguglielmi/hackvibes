@@ -17,7 +17,42 @@
   padding: 0 0 3rem 0;
 
 
+@media (max-width: 500px) {
+  padding: 0 0 1rem 0;
+
+  .form-avatar__name {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    h3 {
+      width:100%;
+      text-align:center;
+      margin: 1rem 0 0 0;
+    }
+
+    .form-style-input-text  {
+      max-width:100%;
+      width: 100%;
+      
+      label {
+        max-width:100%;
+        width: 100%;      
+      }
+
+      input {
+        max-width:100%;
+        width: 100%;
+      }
+    }
+
+  }
+  .form-avatar__photo {
+    padding: 0 5rem 0rem 5rem;
+  }
+  }  
 }
+
 .form-avatar__name {
   margin-right: auto;
 
@@ -26,8 +61,7 @@
     margin: 0 0 1rem 0;
     padding: 0px;
     font-size: 1.2em;
-
-  }
+  } 
 }
 
 .form-avatar__photo {
