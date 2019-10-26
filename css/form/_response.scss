@@ -74,6 +74,10 @@ justify-content:Center;
 .handshake-profile__one {
   .avatar {
     max-width: 200px;
+
+    @media (max-width:800px) {
+      display: none;
+    }
   }
 }
 
@@ -81,10 +85,20 @@ justify-content:Center;
 .handshake-profile__two {
   .avatar {
     max-width: 200px;
+
+    @media (max-width:800px) {
+      width: 80%;
+      margin: auto;
+    }
   }
 }
 .handshake-profile__icon {
   display: flex;
   flex-direction: column;
   padding: 4rem;
+
+  @media (max-width:800px) {
+    display: none;
+  }
+
 }

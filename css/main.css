@@ -2627,8 +2627,21 @@ SKETCH SQUARE EFFECT
   max-width: 200px;
 }
 
+@media (max-width: 800px) {
+  .handshake-profile__one .avatar {
+    display: none;
+  }
+}
+
 .handshake-profile__two .avatar {
   max-width: 200px;
+}
+
+@media (max-width: 800px) {
+  .handshake-profile__two .avatar {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .handshake-profile__icon {
@@ -2640,6 +2653,12 @@ SKETCH SQUARE EFFECT
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 4rem;
+}
+
+@media (max-width: 800px) {
+  .handshake-profile__icon {
+    display: none;
+  }
 }
 
 /* ==========================================================================
