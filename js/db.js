@@ -59,7 +59,7 @@ $(document).ready(function(){
               $('#response').text("Nickname already exists - please try something else.");
               $('#response').show();
             }else if(data.status == 'saved'){
-              $('#response').text("Profile Created");
+              // $('#response').text("Profile Created");
               $('#response').show();
             }else{
               $('#response').text("Something Went Wrong - Please Try Again");
