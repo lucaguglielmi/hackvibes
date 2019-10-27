@@ -6,8 +6,8 @@ BROWSE VIBES CAROUSEL
 
 .vibes-carousel {
     border-left: 2px solid $color-primary;
-    padding-left: 5rem;
-    margin: 3rem auto;
+    padding-left: 3rem;
+    margin: 3rem auto 3rem auto;
     position: relative;
 
     @media (max-width: 900px) {
@@ -19,7 +19,7 @@ BROWSE VIBES CAROUSEL
 .metti-qui-il-carousel {
     background-color: $color-lightgray;
     width: 100%;
-    padding: 3rem;
+    padding: 1rem 3rem 3rem 1rem;
     position:relative;
 
     @media (max-width: 900px) {
@@ -43,7 +43,7 @@ BROWSE VIBES CAROUSEL
     min-width: 350px;
     height: auto;
     margin-right: 2rem;
-    padding: 5rem 0;
+    padding: 0rem 0;
 
     .vibes-card {
       border-radius: 15px;
@@ -51,7 +51,7 @@ BROWSE VIBES CAROUSEL
 
 
     &:nth-child(even) {
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
 
  
