@@ -11,11 +11,10 @@ function displayImage(){
   rn = rn*4;
   rn = Math.floor(rn);
 
-  var currentphoto = images[rn];
-  document.getElementById("pic").innerHTML=currentphoto;
-  document.getElementById("pic-mirrored").innerHTML=currentphoto;
-  
-    // sync img src of the avatar to the confirmation message
-    // $("#pic").find("img").attr("src", $("#pic-loading").attr("src"));
-    // console.log("swap img 2");
+  var newavatar = images[rn];
+  document.getElementById("pic").innerHTML=newavatar;
+  document.getElementById("pic-mirrored").innerHTML=newavatar;
+
+  console.log("New avatar:");
+  console.log(newavatar);
 }
